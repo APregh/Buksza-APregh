@@ -1,0 +1,30 @@
+#editPane {
+    -fx-background-color: rgba(0, 0, 0, 0.11);
+}
+
+#transactionDeleteButton {
+    -fx-background-color: #ac0000;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-cursor: hand;
+}
+
+#transactionDeleteButton:hover {
+    -fx-background-color: #ff0000;
+}
+
+
+#transactionSaveButton {
+    -fx-background-color: green;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+}
+
+#transactionSaveButton:hover {
+    -fx-background-color: #00ae00;
+}
+
+#addCategoryButton {
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}

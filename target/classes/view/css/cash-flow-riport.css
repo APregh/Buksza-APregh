@@ -1,0 +1,73 @@
+.default-color0.chart-series-line {
+    -fx-stroke: red;
+}
+
+.default-color1.chart-series-line {
+    -fx-stroke: green;
+}
+
+.default-color2.chart-series-line {
+    -fx-stroke: blue;
+}
+
+.default-color0.chart-line-symbol{
+    -fx-background-color: red, #ffffff;
+}
+
+.default-color1.chart-line-symbol{
+    -fx-background-color: green, #ffffff;
+}
+
+.default-color2.chart-line-symbol{
+    -fx-background-color: blue, #ffffff;
+}
+
+.chart-plot-background {
+    -fx-background-color: #e2ecfe;
+}
+
+.chart-vertical-grid-lines {
+    -fx-stroke: rgb(85, 138, 192);
+}
+
+.chart-horizontal-grid-lines {
+    -fx-stroke: rgb(85, 138, 192);
+}
+
+.chart-alternative-row-fill {
+    -fx-fill: #f0ffe1;
+    -fx-stroke: transparent;
+    -fx-stroke-width: 0;
+}
+
+#filterButton {
+    -fx-background-color: #1d53a5;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+#filterButton:hover {
+    -fx-background-color: #1d90ff;
+}
+
+#exportButton {
+    -fx-background-color: green;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+#exportButton:hover {
+    -fx-background-color: #00ae00;
+}
+
+#yearMinusButton {
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+
+#yearPlusButton {
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}

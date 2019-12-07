@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.application.cash.controller.TransactionCategoryController">
+    <children>
+        <Label layoutX="93.0" layoutY="14.0" text="Kategória létrehozás">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Button fx:id="createButton" layoutX="276.0" layoutY="241.0" mnemonicParsing="false" onMouseClicked="#createCategory" prefHeight="35.0" prefWidth="100.0" text="Létrehozás">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+        <Button fx:id="closeButton" layoutX="43.0" layoutY="241.0" maxHeight="35.0" mnemonicParsing="false" onMouseClicked="#closeScreen" prefHeight="35.0" prefWidth="100.0" text="Bezárás" />
+        <Label layoutX="29.0" layoutY="90.0" text="Kategória neve :" />
+        <Label layoutX="29.0" layoutY="164.0" text="Szülő kategória :" />
+        <TextField fx:id="categoryNameInput" layoutX="143.0" layoutY="83.0" prefHeight="30.0" prefWidth="200.0" />
+        <ChoiceBox fx:id="parentBox" layoutX="143.0" layoutY="158.0" prefHeight="30.0" prefWidth="200.0" />
+    </children>
+    <stylesheets>
+        <URL value="@../css/main.css" />
+        <URL value="@../css/transaction-category.css" />
+    </stylesheets>
+</AnchorPane>

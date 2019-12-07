@@ -1,0 +1,37 @@
+#accountManagementPane {
+    -fx-background-color: rgba(0, 0, 0, 0.11);
+}
+
+#saveButton {
+    -fx-background-color: #008700;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-cursor: hand;
+}
+
+#saveButton:hover {
+    -fx-background-color: #00c500;
+}
+
+#backButton {
+    -fx-background-color: #1d53a5;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-cursor: hand;
+}
+
+#backButton:hover {
+    -fx-background-color: #1d90ff;
+}
+
+#deleteButton {
+    -fx-background-color: #ac0000;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-cursor: hand;
+}
+
+#deleteButton:hover {
+    -fx-background-color: #ff0000;
+}
+

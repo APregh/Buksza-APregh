@@ -1,0 +1,20 @@
+#createButton {
+    -fx-background-color: green;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+#createButton:hover {
+    -fx-background-color: #00ae00;
+}
+
+#closeButton {
+    -fx-background-color: #ac0000;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-cursor: hand;
+}
+
+#closeButton:hover {
+    -fx-background-color: #ff0000;
+}

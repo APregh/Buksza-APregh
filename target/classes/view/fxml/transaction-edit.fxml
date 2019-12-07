@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.application.cash.controller.TransactionEditController">
+    <Label layoutX="293.0" layoutY="14.0" text="Tranzakció kezelése">
+        <font>
+            <Font size="50.0" />
+        </font>
+    </Label>
+    <Pane fx:id="editPane" layoutX="46.0" layoutY="96.0" prefHeight="608.0" prefWidth="929.0">
+        <children>
+            <TextField fx:id="amountInput" focusTraversable="false" layoutX="210.0" layoutY="280.0" prefHeight="30.0" prefWidth="500.0" />
+            <ChoiceBox fx:id="repeatInputBox" focusTraversable="false" layoutX="210.0" layoutY="400.0" prefHeight="30.0" prefWidth="500.0" />
+            <DatePicker fx:id="paymentDeadlineInput" focusTraversable="false" layoutX="210.0" layoutY="340.0" prefHeight="30.0" prefWidth="500.0" />
+            <TextField fx:id="transactionNameInput" focusTraversable="false" layoutX="210.0" layoutY="40.0" prefHeight="30.0" prefWidth="500.0" />
+            <ChoiceBox fx:id="transactionTypeInputBox" focusTraversable="false" layoutX="210.0" layoutY="220.0" prefHeight="30.0" prefWidth="500.0" />
+            <ChoiceBox fx:id="transactionCategoryInputBox" focusTraversable="false" layoutX="210.0" layoutY="160.0" prefHeight="30.0" prefWidth="500.0" />
+            <ChoiceBox fx:id="accountInputBox" focusTraversable="false" layoutX="210.0" layoutY="100.0" prefHeight="30.0" prefWidth="500.0" />
+            <Button fx:id="transactionSaveButton" layoutX="340.0" layoutY="460.0" mnemonicParsing="false" onMouseClicked="#saveTransaction" prefHeight="40.0" prefWidth="250.0" text="Tranzakció mentése" />
+            <Button fx:id="transactionDeleteButton" layoutX="337.0" layoutY="550.0" mnemonicParsing="false" onMouseClicked="#deleteTransaction" prefHeight="40.0" prefWidth="250.0" text="Tranzakció törlése" />
+            <Label layoutX="61.0" layoutY="45.0" text="Tranzakció neve :">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+            <Label layoutX="61.0" layoutY="105.0" text="Fiók :">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+            <Label layoutX="61.0" layoutY="165.0" text="Tranzakció kategória :">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+            <Label layoutX="61.0" layoutY="225.0" text="Tranzakció típusa :">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+            <Label layoutX="61.0" layoutY="285.0" text="Összeg :">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+            <Label layoutX="61.0" layoutY="345.0" text="Pénzmozgás dátuma:">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+            <Label layoutX="61.0" layoutY="400.0" text="Ismétlődés :">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+         <Label fx:id="addCategoryButton" layoutX="720.0" layoutY="156.0" onMouseClicked="#openCategoryCreatePage" prefHeight="38.0" prefWidth="17.0" text="+">
+            <font>
+               <Font name="System Bold" size="26.0" />
+            </font>
+         </Label>
+        </children>
+    </Pane>
+
+    <Button fx:id="backButton" layoutX="14.0" layoutY="736.0" maxHeight="50.0" maxWidth="150.0" minHeight="50.0" minWidth="150.0" mnemonicParsing="false" onMousePressed="#backToTransaction" prefHeight="50.0" prefWidth="150.0" text="Vissza" />
+   <stylesheets>
+      <URL value="@../css/transaction-edit.css" />
+      <URL value="@../css/main.css" />
+   </stylesheets>
+
+
+</AnchorPane>

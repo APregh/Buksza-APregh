@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.application.cash.controller.AccountController">
+    <Label layoutX="440.0" layoutY="14.0" text="Fiókok">
+        <font>
+            <Font size="50.0" />
+        </font>
+    </Label>
+
+    <Button fx:id="backButton" layoutX="14.0" layoutY="736.0" maxHeight="50.0" maxWidth="150.0" minHeight="50.0" minWidth="150.0" mnemonicParsing="false" onMousePressed="#backToHome" prefHeight="50.0" prefWidth="150.0" text="Vissza" />
+    <TableView fx:id="accountTable" layoutX="31.0" layoutY="105.0" onMouseClicked="#selectAccount" prefHeight="600.0" prefWidth="450.0">
+        <columns>
+            <TableColumn fx:id="accountNameCol" prefWidth="150.0" resizable="false" text="Fiók név" />
+            <TableColumn fx:id="accountTypeCol" prefWidth="150.0" resizable="false" text="Típus" />
+            <TableColumn fx:id="accountAmountCol" prefWidth="150.0" resizable="false" style="-fx-alignment: CENTER-RIGHT;" text="Egyenleg" />
+        </columns>
+    </TableView>
+    <Pane fx:id="accountManagementPane" layoutX="543.0" layoutY="105.0" prefHeight="600.0" prefWidth="450.0">
+        <children>
+            <TextField fx:id="accountNameInput" layoutX="125.0" layoutY="133.0" minHeight="30.0" minWidth="200.0" />
+            <TextField fx:id="amountInput" layoutX="124.0" layoutY="327.0" minHeight="30.0" minWidth="200.0" />
+            <ChoiceBox fx:id="accountTypeInput" layoutX="124.0" layoutY="231.0" minHeight="30.0" minWidth="200.0" prefWidth="150.0" />
+            <Button fx:id="deleteButton" layoutX="150.0" layoutY="551.0" mnemonicParsing="false" onMouseClicked="#deleteAccount" prefHeight="35.0" prefWidth="150.0" text="Törlés" />
+            <Button fx:id="saveButton" layoutX="149.0" layoutY="401.0" mnemonicParsing="false" onMouseClicked="#saveAccount" prefHeight="35.0" prefWidth="150.0" text="Mentés" />
+            <Label layoutX="192.0" layoutY="108.0" text="Fiók neve">
+                <font>
+                    <Font size="16.0" />
+                </font>
+            </Label>
+            <Label layoutX="189.0" layoutY="200.0" text="Fiók típusa">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+            <Label layoutX="200.0" layoutY="300.0" text="Egyenleg">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+            <Label layoutX="167.0" layoutY="29.0" text="Fiók kezelése">
+                <font>
+                    <Font size="20.0" />
+                </font>
+            </Label>
+        </children>
+    </Pane>
+   <stylesheets>
+      <URL value="@../css/account.css" />
+      <URL value="@../css/main.css" />
+   </stylesheets>
+</AnchorPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.application.cash.controller.TransactionController">
+    <Label layoutX="250.0" layoutY="10.0" text="Javasolt tranzakciók">
+        <font>
+            <Font size="50.0" />
+        </font>
+    </Label>
+
+    <Button fx:id="backButton" layoutX="14.0" layoutY="736.0" maxHeight="50.0" maxWidth="150.0" minHeight="50.0" minWidth="150.0" mnemonicParsing="false" onMousePressed="#riportButtonClick" prefHeight="50.0" prefWidth="150.0" text="Vissza" />
+    <TableView fx:id="transactionTable" layoutX="40.0" layoutY="147.0" onMouseClicked="#selectTransaction" prefHeight="418.0" prefWidth="939.0">
+        <columns>
+            <TableColumn fx:id="transactionNameCol" prefWidth="135.0" text="Tranzakció neve" />
+            <TableColumn fx:id="accountNameCol" prefWidth="135.0" text="Fiók neve" />
+            <TableColumn fx:id="transactionCategoryCol" prefWidth="135.0" text="Tranzakció kategória" />
+            <TableColumn fx:id="transactionTypeCol" prefWidth="135.0" text="Tranzakció típusa" />
+            <TableColumn fx:id="amountCol" prefWidth="135.0" style="-fx-alignment: CENTER-RIGHT;" text="Összeg" />
+            <TableColumn fx:id="creationDateCol" prefWidth="135.0" style="-fx-alignment: CENTER;" text="Létrehozás dátuma" />
+            <TableColumn fx:id="paymentDeadlineCol" prefWidth="135.0" style="-fx-alignment: CENTER;" text="Pénzmozgás dátuma" />
+        </columns>
+    </TableView>
+    <DatePicker fx:id="dateFrom" layoutX="520.0" layoutY="107.0" maxHeight="30.0" prefHeight="20.0" prefWidth="150.0" />
+    <DatePicker fx:id="dateTo" layoutX="680.0" layoutY="107.0" maxHeight="30.0" prefHeight="20.0" prefWidth="150.0" />
+    <ChoiceBox fx:id="categoryFilterBox" layoutX="200.0" layoutY="107.0" prefHeight="20.0" prefWidth="150.0" />
+    <ChoiceBox fx:id="typeFilterBox" layoutX="360.0" layoutY="107.0" prefHeight="20.0" prefWidth="150.0" />
+    <Button fx:id="filterButton" layoutX="865.0" layoutY="104.0" maxHeight="30.0" maxWidth="120.0" minHeight="35.0" minWidth="120.0" mnemonicParsing="false" onMouseClicked="#filteringByRecommendation" prefHeight="30.0" prefWidth="120.0" text="Javaslás" textAlignment="CENTER" />
+    <ChoiceBox fx:id="accountFilterBox" layoutX="40.0" layoutY="107.0" prefWidth="150.0" />
+    <Button fx:id="newTransactionButton" layoutX="805.0" layoutY="736.0" mnemonicParsing="false" onMouseClicked="#goToNewTransaction" prefHeight="50.0" prefWidth="200.0" text="Új tranzakció hozzáadása" />
+    <Button fx:id="exportButton" layoutX="865.0" layoutY="29.0" minHeight="35.0" mnemonicParsing="false" onMouseClicked="#exportTransactions" prefHeight="35.0" prefWidth="120.0" text="Exportálás" />
+    <Label layoutX="101.0" layoutY="85.0" text="Fiók" />
+    <Label layoutX="250.0" layoutY="85.0" text="Kategória" />
+    <Label layoutX="422.0" layoutY="85.0" text="Típus" />
+    <Label layoutX="543.0" layoutY="85.0" text="Időszak kezdete" />
+    <Label layoutX="721.0" layoutY="85.0" text="Időszak vége" />
+   <Button fx:id="editTransactionButton" layoutX="805.0" layoutY="613.0" mnemonicParsing="false" onMouseClicked="#goToTransactionEdit" prefHeight="50.0" prefWidth="200.0" text="Tranzakció szerkesztése" />
+   <PieChart fx:id="transactionPieChart" layoutX="300.0" layoutY="577.0" prefHeight="197.0" prefWidth="397.0" />
+   <stylesheets>
+      <URL value="@../css/transaction.css" />
+      <URL value="@../css/main.css" />
+   </stylesheets>
+
+</AnchorPane>

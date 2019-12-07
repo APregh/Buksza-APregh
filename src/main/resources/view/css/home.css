@@ -1,0 +1,25 @@
+#accountButton, #transactionButton, #riportButton, #trendsButton {
+    -fx-background-color: rgba(205, 167, 103, 0.91);
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-cursor: hand;
+}
+
+#accountButton:hover, #transactionButton:hover, #riportButton:hover, #trendsButton:hover {
+    -fx-background-color: #f3c98b;
+}
+
+#exitButton {
+    -fx-background-color: #ac0000;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-cursor: hand;
+}
+
+#exitButton:hover {
+    -fx-background-color: #ff0000;
+}
+
+.label {
+    -fx-font-size: 50px;
+}

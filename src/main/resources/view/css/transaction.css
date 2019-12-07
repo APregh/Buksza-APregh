@@ -1,0 +1,30 @@
+#backButton {
+    -fx-background-color: #1d53a5;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-cursor: hand;
+}
+
+#backButton:hover {
+    -fx-background-color: #1d90ff;
+}
+
+#filterButton {
+    -fx-background-color: #1d53a5;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+#filterButton:hover {
+    -fx-background-color: #1d90ff;
+}
+
+#exportButton, #newTransactionButton, #editTransactionButton {
+    -fx-background-color: green;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+#exportButton:hover, #newTransactionButton:hover, #editTransactionButton:hover {
+    -fx-background-color: #00ae00;
+}

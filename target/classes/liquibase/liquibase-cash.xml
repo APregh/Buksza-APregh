@@ -1,0 +1,24 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="account-table-create.sql" author="" labels="1.0">
+        <sqlFile path="scripts/account-table-create.sql" relativeToChangelogFile="true"/>
+        <comment>A fiókokat tartalmazó tábla létrehozása</comment>
+        <rollback>drop table ACCOUNT;</rollback>
+    </changeSet>
+
+    <changeSet id="transaction-category-table-create.sql" author="" labels="1.0">
+        <sqlFile path="scripts/transaction-category-table-create.sql" relativeToChangelogFile="true"/>
+        <comment>A tranzakciók kategóriáit tartalmazó tábla létrehozása</comment>
+        <rollback>drop table TRANSACTION_CATEGORY;</rollback>
+    </changeSet>
+
+    <changeSet id="transaction-table-create.sql" author="" labels="1.0">
+        <sqlFile path="scripts/transaction-table-create.sql" relativeToChangelogFile="true"/>
+        <comment>A tranzakciókat tartalmazó tábla létrehozása</comment>
+        <rollback>drop table TRANSACTION;</rollback>
+    </changeSet>
+
+</databaseChangeLog>
