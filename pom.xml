@@ -20,7 +20,7 @@
         <hibernate.version>5.3.7.Final</hibernate.version>
         <hibernate.common.version>5.0.4.Final</hibernate.common.version>
         <hibernate.jpamodelgen.version>5.3.7.Final</hibernate.jpamodelgen.version>
-        <version.mysql.mysql-connector-java>8.0.15</version.mysql.mysql-connector-java>
+        <version.mysql.mysql-connector-java>8.0.16</version.mysql.mysql-connector-java>
     </properties>
 
     <dependencies>
